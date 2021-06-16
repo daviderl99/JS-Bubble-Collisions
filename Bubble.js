@@ -10,14 +10,13 @@ class Bubble {
   }
 
   init(){
-    console.log("hi");
     let maxDiameter = 200;
     this.x = randomIntBetween(maxDiameter, width - maxDiameter);
     this.y = randomIntBetween(maxDiameter, height - maxDiameter);
-    this.d = randomIntBetween(50, maxDiameter);
+    this.d = randomIntBetween(10, maxDiameter);
 
-    this.velX = randomIntBetween(1, 5);
-    this.velY = randomIntBetween(1, 5);
+    this.velX = randomIntBetween(-5, 5);
+    this.velY = randomIntBetween(-5, 5);
   }
 
   display(){
